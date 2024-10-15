@@ -1,0 +1,13 @@
+{
+  "name": "afraid-of-the-dark",
+  "version": "2.0.2",
+  "title": "Afraid of the Dark 2.0",
+  "author": "RedRafe",
+  "source": "https://github.com/RedRafe/afraid-of-the-dark",
+  "homepage": "https://mods.factorio.com/user/RedRafe",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0.0"
+  ],
+  "description": "Happiness can be found even in the darkest of times, when one only remembers to turn on the light. Enhance flashlight and personal lights to brighten players' surroundings, without changing the day/night cycle of planets and their power production stats."
+}
