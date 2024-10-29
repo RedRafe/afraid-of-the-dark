@@ -6,13 +6,21 @@ data:extend({
 		default_value = true,
 		order = '0',
 	},
+	{
+		name = 'aotd_nauvis',
+		type = 'string-setting',
+		setting_type = 'startup',
+		default_value = 'bright',
+		allowed_values = { 'default', 'bright', 'nauvis', 'always_day' },
+		order = '1',
+	},
   {
 		name = 'aotd_vulcanus',
 		type = 'string-setting',
 		setting_type = 'startup',
 		default_value = 'bright',
 		allowed_values = { 'default', 'bright', 'nauvis', 'always_day' },
-		order = '1',
+		order = '2',
 	},
   {
 		name = 'aotd_fulgora',
@@ -20,7 +28,7 @@ data:extend({
 		setting_type = 'startup',
 		default_value = 'bright',
 		allowed_values = { 'default', 'bright', 'nauvis', 'always_day' },
-		order = '1',
+		order = '3',
 	},
   {
 		name = 'aotd_gleba',
@@ -28,6 +36,6 @@ data:extend({
 		setting_type = 'startup',
 		default_value = 'bright',
 		allowed_values = { 'default', 'bright', 'nauvis', 'always_day' },
-		order = '1',
+		order = '4',
 	},
 })

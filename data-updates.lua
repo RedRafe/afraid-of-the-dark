@@ -2,6 +2,44 @@ local DLC = '__space-age__/graphics/lut/'
 local CORE = '__core__/graphics/color_luts/'
 
 local presets = {
+  nauvis = {
+    default = {
+      {0.00, CORE..'identity-lut.png'},
+      {0.15, CORE..'identity-lut.png'},
+      {0.20, CORE..'identity-lut.png'},
+      {0.45, CORE..'lut-night.png'},
+      {0.55, CORE..'lut-night.png'},
+      {0.80, CORE..'identity-lut.png'},
+      {0.85, CORE..'identity-lut.png'}
+    },
+    bright = {
+      {0.00, CORE..'identity-lut.png'},
+      {0.15, CORE..'identity-lut.png'},
+      {0.20, CORE..'identity-lut.png'},
+      {0.45, CORE..'lut-sunset.png'},
+      {0.55, CORE..'lut-sunset.png'},
+      {0.80, CORE..'identity-lut.png'},
+      {0.85, CORE..'identity-lut.png'}
+    },
+    nauvis = {
+      {0.00, CORE..'identity-lut.png'},
+      {0.15, CORE..'identity-lut.png'},
+      {0.20, CORE..'identity-lut.png'},
+      {0.45, CORE..'lut-night.png'},
+      {0.55, CORE..'lut-night.png'},
+      {0.80, CORE..'identity-lut.png'},
+      {0.85, CORE..'identity-lut.png'}
+    },
+    always_day = {
+      {0.00, CORE..'lut-day.png'},
+      {0.15, CORE..'lut-day.png'},
+      {0.20, CORE..'lut-day.png'},
+      {0.45, CORE..'lut-day.png'},
+      {0.55, CORE..'lut-day.png'},
+      {0.80, CORE..'lut-day.png'},
+      {0.85, CORE..'lut-day.png'}
+    },
+  },
   vulcanus = {
     default = {
       { 0.00, DLC..'vulcanus-1-day.png' },
@@ -111,7 +149,7 @@ local presets = {
   },
 }
 
-for _, planet in pairs({ 'vulcanus', 'fulgora', 'gleba' }) do 
+for _, planet in pairs({'nauvis', 'vulcanus', 'fulgora', 'gleba' }) do 
   local value = (settings.startup['aotd_'..planet] ~= nil) and settings.startup['aotd_'..planet].value
   if value and presets[planet] and presets[planet][value] and data.raw.planet[planet] then
     local p = data.raw.planet[planet]
@@ -119,7 +157,6 @@ for _, planet in pairs({ 'vulcanus', 'fulgora', 'gleba' }) do
     p.surface_render_parameters.day_night_cycle_color_lookup = table.deepcopy(presets[planet][value])
   end
 end
-
 
 local config = {
   minimum_darkness = 0.2,   -- darkness level when the personal lights are switched on (originally 0.3)
