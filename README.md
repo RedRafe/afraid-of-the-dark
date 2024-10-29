@@ -1,4 +1,4 @@
-# Afraid of the Dark 2.0
+# Bright Universe
 
 > Happiness can be found even in the darkest of times, when one only remembers to turn on the light.
 

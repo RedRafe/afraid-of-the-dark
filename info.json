@@ -9,5 +9,5 @@
   "dependencies": [
     "base >= 2.0.0"
   ],
-  "description": "Happiness can be found even in the darkest of times, when one only remembers to turn on the light. Enhance flashlight and personal lights to brighten players' surroundings, without changing the day/night cycle of planets and their power production stats."
+  "description": "Happiness can be found even in the darkest of times, when one only remembers to turn on the light. Enhance flashlight and personal lights to brighten players' surroundings, without changing the day/night cycle of planets and their power production stats. Fork of Afraid of the Dark mod."
 }
