@@ -1,11 +1,4 @@
 data:extend({
-  {
-		name = 'aotd_character',
-		type = 'bool-setting',
-		setting_type = 'startup',
-		default_value = true,
-		order = '0',
-	},
 	{
 		name = 'aotd_nauvis',
 		type = 'string-setting',
@@ -37,5 +30,13 @@ data:extend({
 		default_value = 'bright',
 		allowed_values = { 'default', 'bright', 'nauvis', 'always_day' },
 		order = '4',
+	},
+	{
+		name = 'aotd_aquilo',
+		type = 'string-setting',
+		setting_type = 'startup',
+		default_value = 'bright',
+		allowed_values = { 'default', 'bright', 'nauvis', 'always_day' },
+		order = '5',
 	},
 })
